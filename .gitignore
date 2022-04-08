@@ -3,5 +3,12 @@
 Homestead.json
 Homestead.yaml
 .env
+/.vscode
+.scannerwork/**
+/.phpunit.cache
 .phpunit.result.cache
 composer.lock
+database/database.sqlite
+coverage.xml
+coverage-report.xml
+tests-report.xml
