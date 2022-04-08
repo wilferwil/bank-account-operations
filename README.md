@@ -11,7 +11,7 @@ Within the project folder, execute the following shell command:
 
 <pre><code>composer install</code></pre>
 
-After it, copy the file named **.env.exemple**, in the project root, to a new file named **.env** on the same folder.
+After it, copy the file named **.env.example**, in the project root, to a new file named **.env** on the same folder.
 
 <pre><code>cp .env.example .env</code></pre>
 
@@ -26,6 +26,26 @@ Be sure that you have PHP 7.3 or higher (Lumen 8 compatible), then run the comma
 
 That's it. Now you can start using the API from "http://localhost:8000" URI.
 Look at the bottom of the page for complete endpoint usage.
+
+## GitHub Actions pipeline and PHPUnit automated tests coverage
+
+On new pull requests to the master branch, all PHPUnit tests will be run by the GitHub Actions pipeline.
+
+In addition, a new coverage report will be available on Codecov.io. Below you can see the latest report.
+
+**Latest coverage report:**
+
+[Click here to view the full coverage report on Codecov.](https://app.codecov.io/gh/wilferwil/bank-account-operations)
+
+![Latest coverage report](.coverage-overview/screencapture-app-codecov-io-gh-wilferwil-bank-account-operations-2022-04-08-04_03_14.png "PHPUnit coverage report on Codecov")
+
+If you want to run the automated tests locally. Just type the following command after the full composer installation:
+
+<pre><code>vendor/bin/phpunit</code></pre>
+
+**Ipkiss/pragmazero test suite on endpoints:**
+
+![ipkiss/pragmazero test suite](.coverage-overview/screencapture-ipkiss-pragmazero-test-2022-04-08-03_55_51.png "ipkiss/pragmazero test suite")
 
 # API usage documentation
 
